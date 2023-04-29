@@ -1,0 +1,193 @@
+@mixin Timer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+  p {
+    display: flex;
+    justify-content: space-around;
+    font-size: 40px;
+    color: #882898;
+    margin: 10px;
+  }
+}
+
+body main #mainThirdSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+
+  h2 {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  #mainThirdSectionSlider {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  button {
+    height: 20px;
+  }
+
+  .mainThirdSectionSliderCard {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #281a2a;
+    padding: 10px 0;
+    margin: 0 20px;
+    border: 1px solid #882898;
+    border-radius: 20px;
+
+    .mainThirdSectionSliderCardTop {
+      width: 90%;
+
+      img {
+        width: 100%;
+        margin: auto;
+      }
+    }
+
+    .mainThirdSectionSliderCardLeft {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      bottom: 30px;
+
+      img {
+        width: 60px;
+        height: 60px;
+        margin: 0;
+      }
+
+      h3 {
+        font-size: 20px;
+        color: #FFF;
+        margin: 0;
+        font-family: Montserrat, sans-serif;
+      }
+
+      p {
+        color: #FFF;
+        opacity: 0.5;
+      }
+
+      div {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        flex-wrap: wrap;
+
+        img {
+          width: 20px;
+          height: 20px;
+          margin-right: 5px;
+        }
+
+        span {
+          color: #901FA3;
+          margin: 0 15px;
+        }
+
+        div {
+          width: 100%;
+        }
+      }
+    }
+
+    .mainThirdSectionSliderCardRight {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 40%;
+      position: relative;
+      bottom: 20px;
+      padding-left: 20px;
+
+      p {
+        padding: 5px 20px;
+        color: #882898;
+        border: 1px solid #882898;
+        border-radius: 10px;
+        width: 50%;
+
+      }
+
+      span {
+        padding: 5px 20px;
+        color: #882898;
+        border-radius: 10px;
+        opacity: 0.5;
+
+      }
+
+      div {
+        display: flex;
+      }
+
+      p {
+
+      }
+    }
+
+    #Timer2 {
+      @include Timer;
+    }
+
+    #Timer3 {
+      @include Timer;
+    }
+
+    #Timer4 {
+      @include Timer;
+    }
+    .mainThirdSectionSliderCardBottom {
+      display: flex;
+      justify-content: center;
+      button:nth-child(1) {
+        margin-right: 10px;
+        background-color: #901FA3;
+        color: white;
+        border: 1px solid #901FA3;
+        border-radius: 10px;
+        height: 30px;
+        padding: 0 20px;
+      }
+      button:nth-child(1):hover {
+        color: gold;
+        border: 1px solid gold;
+        cursor: pointer;
+        transition: 0.75s ease-in-out;
+      }
+      button:nth-child(2) {
+        margin-right: 10px;
+        background-color: black;
+        color: white;
+        border: 1px solid white;
+        border-radius: 10px;
+        height: 30px;
+        padding: 0 20px;
+      }
+      button:nth-child(2):hover {
+        color: #901FA3;
+        cursor: pointer;
+        transition: 0.75s ease-in-out;
+      }
+    }
+  }
+}

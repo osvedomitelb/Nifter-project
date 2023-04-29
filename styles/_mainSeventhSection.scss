@@ -1,0 +1,74 @@
+body main #mainSeventhSection {
+  display: flex;
+  justify-content: space-around;
+  background-image: url("../assets/mainSeventhSection/mainSeventhSectionBackground.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 70%;
+  border-radius: 30px;
+  align-items: center;
+  margin: 30px auto;
+
+  #mainSeventhSectionLeft {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    border-radius: 20px;
+
+    h2 {
+      font-size: 20px;
+      color: white;
+    }
+
+    p {
+      font-size: 14px;
+      color: white;
+      opacity: 0.5;
+    }
+
+    form {
+      display: flex;
+      justify-content: space-between;
+      border-radius: 20px;
+
+      input[type='text'] {
+        background-color: #882898;
+        color: gold;
+        border: 1px solid #882898;
+        border-radius: 20px;
+        width: 100%;
+        padding: 5px 10px;
+      }
+
+      input[type='text']::placeholder {
+        color: white;
+      }
+
+      input[type='submit'] {
+        background-color: white;
+        color: #882898;
+        position: relative;
+        left: 0;
+        border-radius: 20px;
+        margin-left: 10px;
+        border: 1px solid #882898;
+      }
+
+      input[type='submit']:hover {
+        cursor: pointer;
+        color: gold;
+        border-color: gold;
+        background-color: #882898;
+        transition: 1.5s;
+      }
+    }
+  }
+
+  #mainSeventhSectionLeft {
+    img {
+      max-width: 217px;
+    }
+  }
+}

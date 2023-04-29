@@ -1,0 +1,243 @@
+/***********************HEADER SECTION*************************/
+
+body header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-image: url("../assets/headerSection/headerSectionBackground.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+body header #headerLeftSection {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body header #headerLeftSection:hover {
+  cursor: pointer;
+  color: gold;
+  transition: 0.5s ease-in-out;
+}
+
+body header #headerLeftSection img {
+  width: 30px;
+  height: 30px;
+}
+
+body header #headerLeftSection span {
+  font-size: 24px;
+  letter-spacing: 1px;
+  margin-left: 10px;
+}
+
+body header #headerMiddleSection {
+  width: 60%;
+}
+
+
+body header #headerMiddleSection ul , body header #headerMiddleSection li{
+  margin: 0;
+  padding: 0;
+}
+
+body header #headerMiddleSection ul {
+  list-style: none;
+  width: 100%;
+}
+
+body header #headerMiddleSection li {
+  float: left;
+  position: relative;
+  width: 15%;
+  align-items: center;
+}
+
+body header #headerMiddleSection li:last-child {
+  margin: 10px;
+  display: none;
+}
+
+body header #headerMiddleSection a {
+  margin: 0 20px;
+  color: white;
+  display: block;
+  font-size: 13px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.5s ease-out;
+}
+
+
+body header #headerMiddleSection #subMenu1 {
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 35px;
+  visibility: hidden;
+  z-index: 1;
+}
+
+body header #headerMiddleSection #subMenu2 {
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 35px;
+  visibility: hidden;
+  z-index: 1;
+}
+
+body header #headerMiddleSection #subMenu3 {
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 35px;
+  visibility: hidden;
+  z-index: 1;
+}
+
+body header #headerMiddleSection #subMenu4 {
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 35px;
+  visibility: hidden;
+  z-index: 1;
+}
+
+body header #headerMiddleSection #subMenu5 {
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 35px;
+  visibility: hidden;
+  z-index: 1;
+}
+
+body header #headerMiddleSection li:hover ul#subMenu1 {
+  opacity: 1;
+  top: 40px;
+  visibility: visible;
+}
+
+body header #headerMiddleSection li:hover ul#subMenu2 {
+  opacity: 1;
+  top: 40px;
+  visibility: visible;
+}
+
+body header #headerMiddleSection li:hover ul#subMenu3 {
+  opacity: 1;
+  top: 40px;
+  visibility: visible;
+}
+
+
+body header #headerMiddleSection li:hover ul#subMenu4 {
+  opacity: 1;
+  top: 40px;
+  visibility: visible;
+}
+
+
+body header #headerMiddleSection li:hover ul#subMenu5 {
+  opacity: 1;
+  top: 40px;
+  visibility: visible;
+}
+
+body header #headerMiddleSection li:hover ul#subMenu1 li {
+  float: none;
+  width: 100%;
+}
+
+body header #headerMiddleSection li:hover ul#subMenu2 li {
+  float: none;
+  width: 100%;
+}
+
+body header #headerMiddleSection li:hover ul#subMenu3 li {
+  float: none;
+  width: 100%;
+}
+
+body header #headerMiddleSection li:hover ul#subMenu4 li {
+  float: none;
+  width: 100%;
+}
+
+body header #headerMiddleSection li:hover ul#subMenu5 li {
+  float: none;
+  width: 100%;
+}
+
+body header #headerMiddleSection li:hover ul#subMenu1 a:hover {
+  background-color: #901FA3;
+  border-radius: 20px;
+  color: gold;
+}
+
+body header #headerMiddleSection li:hover ul#subMenu2 a:hover {
+  background-color: #901FA3;
+  border-radius: 20px;
+  color: gold;
+}
+
+body header #headerMiddleSection li:hover ul#subMenu3 a:hover {
+  background-color: #901FA3;
+  border-radius: 20px;
+  color: gold;
+}
+
+body header #headerMiddleSection li:hover ul#subMenu4 a:hover {
+  background-color: #901FA3;
+  border-radius: 20px;
+  color: gold;
+}
+
+body header #headerMiddleSection li:hover ul#subMenu5 a:hover {
+  background-color: #901FA3;
+  border-radius: 20px;
+  color: gold;
+}
+
+body header #headerRightSection {
+  width: 25%;
+}
+
+
+body header #headerRightSection input[type = "text"] {
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: #1F1721;
+  width: 100px;
+  padding: 5px 5px 5px 20px;
+  color: gold;
+}
+
+body header #headerRightSection input[type = "text"]::placeholder {
+  color: gold;
+}
+
+body header #headerRightSection input[type = "submit"] {
+  padding: 6px 20px;
+  margin-left: 10px;
+  background-image: linear-gradient(#882898, #901FA3);
+  border-radius: 5px;
+  border: none;
+  color: white;
+}
+
+body header #headerRightSection input[type = "submit"]:hover {
+  cursor: pointer;
+  color: gold;
+  transition: 0.5s ease-in-out;
+}

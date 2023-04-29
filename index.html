@@ -1,0 +1,680 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nifter</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</head>
+<body>
+<header>
+    <div id="headerLeftSection">
+        <img src="assets/headerSection/logo.png" alt="logoImage">
+        <span>Nifter</span>
+    </div>
+    <div id="headerMiddleSection">
+        <ul>
+            <li>
+                <a href="#">Home</a>
+                <ul class="submenu" id="subMenu1">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Values</a></li>
+                    <li><a href="#">Our Goals</a></li>
+                    <li><a href="#">Locations</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Market</a>
+                <ul id="subMenu2">
+                    <li><a href="#">Abstract</a></li>
+                    <li><a href="#">Game</a></li>
+                    <li><a href="#">Modern Art</a></li>
+                    <li><a href="#">Graffiti</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Discover</a>
+                <ul id="subMenu3">
+                    <li><a href="#">Our Offer</a></li>
+                    <li><a href="#">How to become a member</a></li>
+                    <li><a href="#">How to become popular on our platform?</a></li>
+                    <li><a href="#">How to get to know people around here?</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Community</a>
+                <ul id="subMenu4">
+                    <li><a href="#">Our Buyers</a></li>
+                    <li><a href="#">Our Artists</a></li>
+                    <li><a href="#">Our Team</a></li>
+                    <li><a href="#">Social Networks</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Wallet</a>
+                <ul id="subMenu5">
+                    <li><a href="#">How to buy?</a></li>
+                    <li><a href="#">How to sell?</a></li>
+                    <li><a href="#">How to take part in an auction?</a></li>
+                    <li><a href="#">How to evade fishing?</a></li>
+                </ul>
+            </li>
+            <li>Menu</li>
+        </ul>
+    </div>
+    <div id="headerRightSection">
+        <form>
+            <input type="text" placeholder="Search">
+            <input type="submit" value="Explore">
+        </form>
+    </div>
+</header>
+<main>
+    <div id="mainFirstSection">
+        <div id="mainFirstSectionLeft" data-aos="fade-down" data-aos-duration="1500">
+            <div id="mainFirstSectionLeftOne">
+                <h2>Discover, </h2>
+                <h2>collect and sell</h2>
+                <h2>dope NFTs</h2>
+                <span>The wold`s largest digital marketplace for crypto
+                    collectibles and non-fungible tokens (NFTs)</span>
+            </div>
+            <div id="mainFirstSectionLeftTwo">
+                <button>Explore</button>
+                <button>Create</button>
+            </div>
+            <div id="mainFirstSectionLeftThree">
+                <img src="assets/mainSectionTwo.png" alt="img">
+                <div>
+                    <span>42k+</span>
+                    <p>Active Users</p>
+                </div>
+            </div>
+            <div id="mainFirstSectionLeftFour">
+                <img src="assets/mainSectionTwo.png" alt="img">
+                <div>
+                    <span>8k+</span>
+                    <p>Artworks</p>
+                </div>
+            </div>
+            <div id="mainFirstSectionLeftFive">
+                <img src="assets/mainSectionTwo.png" alt="img">
+                <div>
+                    <span>2k+</span>
+                    <p>Artists</p>
+                </div>
+            </div>
+        </div>
+        <div id="mainFirstSectionRight">
+            <img src="assets/mainSectionOne.png" alt="artImg">
+            data-aos-easing="ease-in-sine">
+            <div id="mainFirstSectionRightOne">
+                <div id="mainFirstSectionRightOneOne" class="mainFirstSectionRightOneDiv">
+                    <span>Current Bid</span>
+                    <div>
+                        <div class="currentBid">
+                            <!--                        <img src = "assets/dollarGrayIcon.png" alt = "dollarLogo">-->
+                            <span id="bidSectionETH"></span>
+                            <span id="bidSectionUSD"></span>
+                        </div>
+                        <div class="currentBid">
+                            <span>ETH</span>
+                            <!--                        <img src = "assets/grayEthereumIcon.jpg" alt = "ethereumLogo">-->
+                            <span>USD</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="mainFirstSectionRightOneTwo" class="mainFirstSectionRightOneDiv">
+                    <span>Auction ends in</span>
+                    <div id="Timer" class="end">
+                        <p id="hours1"></p>
+                        <p id="minutes1"></p>
+                        <p id="secs1"></p>
+                        <p id="end1"></p>
+                    </div>
+                </div>
+                <div id="mainFirstSectionRightOneThree" class="mainFirstSectionRightOneDiv">
+                    <button id="bidBtn">Bid now</button>
+                    <div id="myModal1" class="modal1">
+                        <div class="modal-content">
+                            <span class="closeBtn1">&times;</span>
+                            <form>
+                                <div class="formDivBet">
+                                    <label for="inputUSD">Amount in USD</label>
+                                    <br>
+                                    <input type="number" id="inputUSD" placeholder="Enter the amount" min="1.00"
+                                           max="90000.00" step="0.01">
+                                </div>
+                                <div class="formDivBet">
+                                    <label for="inputETH">Amount in ETH</label>
+                                    <br>
+                                    <input type="number" id="inputETH" placeholder="00.00" readonly>
+                                </div>
+                                <input type="submit" id="inputBet" value="Bet">
+                            </form>
+                        </div>
+                    </div>
+                    <button id="seeBtn">See item</button>
+                    <div id="myModal2" class="modal2">
+                        <div class="modal-content">
+                            <span class="closeBtn2">&times;</span>
+                            <img src="assets/mainSectionOne.png" alt="artImg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="mainSecondSection">
+        <div class="mainSecondSection-Information">
+            <h2 data-aos="fade-down">Top Seller</h2>
+            <select id="timePeriod" size="1" data-aos="fade-down">
+                <option value="Today">Today</option>
+                <option value="This Week">This Week</option>
+                <option value="This Month">This Month</option>
+                <option value="This Quarter">This Quarter</option>
+            </select>
+        </div>
+        <div class="mainSecondSection-Slider" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+            <div class="mainSecondSection-SliderDiv">
+                <div class="slide img-1">
+                    <div class="slide-img">
+                        <img src="assets/mainSecondSection/sliderSectionOne.png">
+                    </div>
+                    <div class="slide-content">
+                        <div>
+                            <span>Jorg George</span>
+                            <span>885.6</span>
+                            <span>Eth</span>
+                        </div>
+                        <div>
+                            <a href="#"><img src="assets/mainSecondSection/sliderSectionNine.png" alt="groupLogo"></a>
+                            <a href="#"><img src="assets/mainSecondSection/sliderSectionTen.png" alt="telegramLogo"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mainSecondSection-SliderDiv">
+                <div class="slide img-2">
+                    <div class="slide-img">
+                        <img src="assets/mainSecondSection/sliderSectionTwo.png">
+                    </div>
+                    <div class="slide-content">
+                        <div>
+                            <span>Maria Stanton</span>
+                            <span>100.1</span>
+                            <span>Eth</span>
+                        </div>
+                        <div>
+                            <a href="#"><img src="assets/mainSecondSection/sliderSectionNine.png" alt="groupLogo"></a>
+                            <a href="#"><img src="assets/mainSecondSection/sliderSectionTen.png" alt="telegramLogo"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mainSecondSection-SliderDiv">
+                <div class="slide img-3">
+                    <div class="slide-img">
+                        <img src="assets/mainSecondSection/sliderSectionThree.png">
+                    </div>
+                    <div class="slide-content">
+                        <div>
+                            <span>Kaiya Berti</span>
+                            <span>500.2</span>
+                            <span>Eth</span>
+                        </div>
+                        <div>
+                            <a href="#"><img src="assets/mainSecondSection/sliderSectionNine.png" alt="groupLogo"></a>
+                            <a href="#"><img src="assets/mainSecondSection/sliderSectionTen.png" alt="telegramLogo"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mainSecondSection-SliderDiv">
+                <div class="slide img-4">
+                    <div class="slide-img">
+                        <img src="assets/mainSecondSection/sliderSectionFour.png">
+                    </div>
+                    <div class="slide-content">
+                        <div>
+                            <span>Anna Enabel</span>
+                            <span>45.6</span>
+                            <span>Eth</span>
+                        </div>
+                        <div>
+                            <a href="#"><img src="assets/mainSecondSection/sliderSectionNine.png" alt="groupLogo"></a>
+                            <a href="#"><img src="assets/mainSecondSection/sliderSectionTen.png" alt="telegramLogo"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mainSecondSection-SliderDiv">
+                <div class="slide img-5">
+                    <div class="slide-img">
+                        <img src="assets/mainSecondSection/sliderSectionFive.png">
+                    </div>
+                    <div class="slide-content">
+                        <div>
+                            <span>Zain Berty</span>
+                            <span>42.4</span>
+                            <span>Eth</span>
+                        </div>
+                        <div>
+                            <a href="#"><img src="assets/mainSecondSection/sliderSectionNine.png" alt="groupLogo"></a>
+                            <a href="#"><img src="assets/mainSecondSection/sliderSectionTen.png" alt="telegramLogo"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mainSecondSection-SliderDiv">
+                <div class="slide img-6">
+                    <div class="slide-img">
+                        <img src="assets/mainSecondSection/sliderSectionSix.png">
+                    </div>
+                    <div class="slide-content">
+                        <div>
+                            <span>Jordyn Nis</span>
+                            <span>885.6</span>
+                            <span>Eth</span>
+                        </div>
+                        <div>
+                            <a href="#"><img src="assets/mainSecondSection/sliderSectionNine.png" alt="groupLogo"></a>
+                            <a href="#"><img src="assets/mainSecondSection/sliderSectionTen.png" alt="telegramLogo"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mainSecondSection-SliderDiv">
+                <div class="slide img-7">
+                    <div class="slide-img">
+                        <img src="assets/mainSecondSection/sliderSectionSeven.png">
+                    </div>
+                    <div class="slide-content">
+                        <div>
+                            <span>Ben Branson</span>
+                            <span>10.9</span>
+                            <span>Eth</span>
+                        </div>
+                        <div>
+                            <a href="#"><img src="assets/mainSecondSection/sliderSectionNine.png" alt="groupLogo"></a>
+                            <a href="#"><img src="assets/mainSecondSection/sliderSectionTen.png" alt="telegramLogo"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mainSecondSection-SliderDiv">
+                <div class="slide img-8">
+                    <div class="slide-img">
+                        <img src="assets/mainSecondSection/sliderSectionEight.png">
+                    </div>
+                    <div class="slide-content">
+                        <div>
+                            <span>Dav Nagan</span>
+                            <span>495.5</span>
+                            <span>Eth</span>
+                        </div>
+                        <div>
+                            <a href="#"><img src="assets/mainSecondSection/sliderSectionNine.png" alt="groupLogo"></a>
+                            <a href="#"><img src="assets/mainSecondSection/sliderSectionTen.png" alt="telegramLogo"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="mainThirdSection">
+        <h2 data-aos="fade-down">Live Auction</h2>
+        <div id="mainThirdSectionSlider" data-aos="zoom-in">
+            <div class="mainThirdSectionSliderCard" style="margin: 50px 0">
+                <div class="mainThirdSectionSliderCardTop">
+                    <img src="assets/mainThirdSection/thirdSectionLeftCardOne.png">
+                </div>
+                <div class="mainThirdSectionSliderCardLeft">
+                    <img src="assets/mainThirdSection/thirdSectionLeftCardTwo.png">
+                    <h3>Onus Medu</h3>
+                    <p>By davincidante</p>
+                    <div>
+                        <img src="assets/mainThirdSection/thirdSectionCardSearch.png">
+                        <p>Highest bid </p>
+                        <span>0.02Eth</span>
+                    </div>
+                </div>
+                <div class="mainThirdSectionSliderCardRight">
+                    <p>5.12 ETH</p>
+                    <span>8 in stock</span>
+                </div>
+                <div id="Timer2" class="end">
+                    <p id="hours2"></p>
+                    <p id="minutes2"></p>
+                    <p id="secs2"></p>
+                    <p id="end2"></p>
+                </div>
+                <div class="mainThirdSectionSliderCardBottom">
+                    <button class="placeBid">Place Bid</button>
+                    <button class="viewImg">View</button>
+                </div>
+            </div>
+            <div class="mainThirdSectionSliderCard">
+                <div class="mainThirdSectionSliderCardTop">
+                    <img src="assets/mainThirdSection/thirdSectionMiddleCardOne.png" style="padding-top: 20px">
+                </div>
+                <div class="mainThirdSectionSliderCardLeft">
+                    <img src="assets/mainThirdSection/thirdSectionMiddleCardTwo.png">
+                    <h3>Dream Big</h3>
+                    <p>By itvrn</p>
+                    <div>
+                        <img src="assets/mainThirdSection/thirdSectionCardSearch.png">
+                        <p>Highest bid </p>
+                        <span>0.12Eth</span>
+                    </div>
+                </div>
+                <div class="mainThirdSectionSliderCardRight">
+                    <p>2.45 ETH</p>
+                    <span>6 in stock</span>
+                </div>
+                <div id="Timer3" class="end">
+                    <p id="hours3"></p>
+                    <p id="minutes3"></p>
+                    <p id="secs3"></p>
+                    <p id="end3"></p>
+                </div>
+                <div class="mainThirdSectionSliderCardBottom">
+                    <button class="placeBid">Place Bid</button>
+                    <button class="viewImg">View</button>
+                </div>
+            </div>
+            <div class="mainThirdSectionSliderCard" style="margin: 50px 0">
+                <div class="mainThirdSectionSliderCardTop">
+                    <img src="assets/mainThirdSection/thirdSectionRightCardOne.png">
+                </div>
+                <div class="mainThirdSectionSliderCardLeft">
+                    <img src="assets/mainThirdSection/thirdSectionRightCardTwo.png">
+                    <h3>Oddoties</h3>
+                    <p>By brellias</p>
+                    <div>
+                        <img src="assets/mainThirdSection/thirdSectionCardSearch.png">
+                        <p>Highest bid </p>
+                        <span>0.08Eth</span>
+                    </div>
+                </div>
+                <div class="mainThirdSectionSliderCardRight">
+                    <p>1.45 ETH</p>
+                    <span>3 in stock</span>
+                </div>
+                <div id="Timer4" class="end">
+                    <p id="hours4"></p>
+                    <p id="minutes4"></p>
+                    <p id="secs4"></p>
+                    <p id="end4"></p>
+                </div>
+                <div class="mainThirdSectionSliderCardBottom">
+                    <button class="placeBid">Place Bid</button>
+                    <button class="viewImg">View</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="mainFourthSection">
+        <h2 data-aos="zoom-in">Hot Collection</h2>
+        <div id="mainFourthSectionSlider">
+            <div class="mainFourthSectionCard" data-aos="fade-right">
+                <div class="mainFourthSectionCardImages">
+                    <img src="assets/mainFourthSection/1.1.png" alt="img">
+                    <img src="assets/mainFourthSection/1.2.png" alt="img">
+                    <img src="assets/mainFourthSection/1.3.png" alt="img">
+                    <img src="assets/mainFourthSection/1.4.png" alt="img">
+                </div>
+                <div class="mainFourthSectionCardInfo">
+                    <p>Abstract</p>
+                    <button>24 items</button>
+                </div>
+            </div>
+            <div class="mainFourthSectionCard" data-aos="fade-down">
+                <div class="mainFourthSectionCardImages">
+                    <img src="assets/mainFourthSection/2.1.png" alt="img">
+                    <img src="assets/mainFourthSection/2.2.png" alt="img">
+                    <img src="assets/mainFourthSection/2.3.png" alt="img">
+                    <img src="assets/mainFourthSection/2.4.png" alt="img">
+                </div>
+                <div class="mainFourthSectionCardInfo">
+                    <p>Game</p>
+                    <button>27 items</button>
+                </div>
+            </div>
+            <div class="mainFourthSectionCard" data-aos="fade-left">
+                <div class="mainFourthSectionCardImages">
+                    <img src="assets/mainFourthSection/3.1.png" alt="img">
+                    <img src="assets/mainFourthSection/3.2.png" alt="img">
+                    <img src="assets/mainFourthSection/3.3.png" alt="img">
+                    <img src="assets/mainFourthSection/3.4.png" alt="img">
+                </div>
+                <div class="mainFourthSectionCardInfo">
+                    <p>3D</p>
+                    <button>13 items</button>
+                </div>
+            </div>
+            <div class="mainFourthSectionCard" data-aos="fade-left">
+                <div class="mainFourthSectionCardImages">
+                    <img src="assets/mainFourthSection/4.1.png" alt="img">
+                    <img src="assets/mainFourthSection/4.2.png" alt="img">
+                    <img src="assets/mainFourthSection/4.3.png" alt="img">
+                    <img src="assets/mainFourthSection/4.4.png" alt="img">
+                </div>
+                <div class="mainFourthSectionCardInfo">
+                    <p>Modern Art</p>
+                    <button>8 items</button>
+                </div>
+            </div>
+            <div class="mainFourthSectionCard" data-aos="fade-up">
+                <div class="mainFourthSectionCardImages">
+                    <img src="assets/mainFourthSection/5.1.png" alt="img">
+                    <img src="assets/mainFourthSection/5.2.png" alt="img">
+                    <img src="assets/mainFourthSection/5.3.png" alt="img">
+                    <img src="assets/mainFourthSection/5.4.png" alt="img">
+                </div>
+                <div class="mainFourthSectionCardInfo">
+                    <p>Watercolor</p>
+                    <button>4 items</button>
+                </div>
+            </div>
+            <div class="mainFourthSectionCard" data-aos="fade-right">
+                <div class="mainFourthSectionCardImages">
+                    <img src="assets/mainFourthSection/6.1.png" alt="img">
+                    <img src="assets/mainFourthSection/6.2.png" alt="img">
+                    <img src="assets/mainFourthSection/6.3.png" alt="img">
+                    <img src="assets/mainFourthSection/6.4.png" alt="img">
+                </div>
+                <div class="mainFourthSectionCardInfo">
+                    <p>Graffiti</p>
+                    <button>10 items</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="mainFifthSection">
+        <h2 data-aos="fade-up">Explore Artworks</h2>
+        <nav data-aos="fade-up">
+            <ul>
+                <li>Recommendations</li>
+                <li>Music</li>
+                <li>Modern Art</li>
+                <li>3D</li>
+                <li>Watercolor</li>
+            </ul>
+        </nav>
+        <div id="mainFifthSectionSlider">
+            <div class="mainFifthSectionCard" data-aos="fade-up" id="C5.1">
+                <img src="assets/mainFifthSection/one.png">
+                <div class="mainFifthSectionCardInfo">
+                    <div class="mainFifthSectionCardInfoOne">
+                        <p>Vaporant</p>
+                        <p>by weidner art</p>
+                        <span>1 of 1 available</span>
+                    </div>
+                    <div class="mainFifthSectionCardInfoTwo">
+                        <button>2.45ETH</button>
+                        <p><img src="assets/mainFifthSection/heart.png">50K</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mainFifthSectionCard" data-aos="fade-up" id="C5.2">
+                <img src="assets/mainFifthSection/two.png">
+                <div class="mainFifthSectionCardInfo">
+                    <div class="mainFifthSectionCardInfoOne">
+                        <p>Vaporant</p>
+                        <p>by weidner art</p>
+                        <span>1 of 1 available</span>
+                    </div>
+                    <div class="mainFifthSectionCardInfoTwo">
+                        <button>2.45ETH</button>
+                        <p><img src="assets/mainFifthSection/heart.png">30K</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mainFifthSectionCard" data-aos="fade-up" id="C5.3">
+                <img src="assets/mainFifthSection/three.png">
+                <div class="mainFifthSectionCardInfo">
+                    <div class="mainFifthSectionCardInfoOne">
+                        <p>Vaporant</p>
+                        <p>by weidner art</p>
+                        <span>1 of 1 available</span>
+                    </div>
+                    <div class="mainFifthSectionCardInfoTwo">
+                        <button>2.45ETH</button>
+                        <p><img src="assets/mainFifthSection/heart.png">20K</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mainFifthSectionCard" data-aos="fade-up" id="C5.4">
+                <img src="assets/mainFifthSection/four.png">
+                <div class="mainFifthSectionCardInfo">
+                    <div class="mainFifthSectionCardInfoOne">
+                        <p>Vaporant</p>
+                        <p>by weidner art</p>
+                        <span>1 of 1 available</span>
+                    </div>
+                    <div class="mainFifthSectionCardInfoTwo">
+                        <button>2.45ETH</button>
+                        <p><img src="assets/mainFifthSection/heart.png">20K</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="mainFifthSectionNav" data-aos="fade-down">
+            <button id="loadMore">Load more</button>
+            <span id="card-count">4</span>
+            <p>of</p>
+            <span id="card-total"></span>
+            <p>cards</p>
+        </div>
+    </div>
+    <div id="mainSixthSection">
+        <div id="mainSixthSectionLeft" data-aos="fade-right">
+            <h2>How it Works</h2>
+            <p>Getting started and seling your
+                Nfts.Explore the full process so you
+                dont have any cpnfusions.</p>
+            <button>Load More</button>
+        </div>
+        <div id="mainSixthSectionRight">
+            <div class="mainSixthSectionRightCard" data-aos="flip-up">
+                <img src="assets/mainSixthSection/one.png" alt="img">
+                <p>Set up your wallet</p>
+                <span>To set up Apple Pay, add a debit, credit, or prepaid card
+                    to the Wallet app on your iPhone,
+                    Apple Watch, or other compatible device.</span>
+            </div>
+            <div class="mainSixthSectionRightCard" data-aos="flip-up">
+                <img src="assets/mainSixthSection/two.png" alt="img">
+                <p>Create collection</p>
+                <span>In the command, name is name of collection to be created.
+                    Options is a document and is used to specify configuration</span>
+            </div>
+            <div class="mainSixthSectionRightCard" data-aos="flip-up">
+                <img src="assets/mainSixthSection/three.png" alt="img">
+                <p>Add your NFTs</p>
+                <span>If you want to create a series of NFTs, you can use a collection
+                    to do so — on Rarible, you can create one right
+                    from the NFT creation screen</span>
+            </div>
+            <div class="mainSixthSectionRightCard" data-aos="flip-up">
+                <img src="assets/mainSixthSection/four.png" alt="img">
+                <p>List item for sale</p>
+                <span>Creating a listing is the first step in getting your item in front
+                    of ... We have a range of tools and options to help make sure your
+                    listing ends in a sale.</span>
+            </div>
+        </div>
+    </div>
+    <div id="mainSeventhSection" data-aos="flip-up" data-aos-duration="1200">
+        <div id="mainSeventhSectionLeft">
+            <h2>Are you a digital creator?</h2>
+            <p>Learn how Marketplace helps you protect and sell your
+                unique digital creations, and join our growing community
+                of thousand digital creators </p>
+            <form>
+                <input type="text" placeholder="Enter your email">
+                <input type="submit" value="Get started">
+            </form>
+        </div>
+        <div id="mainSeventhSectionRight">
+            <img src="assets/mainSeventhSection/mainSeventhSection.png" alt="img">
+        </div>
+    </div>
+</main>
+<footer>
+    <div id="footerLeft" data-aos="fade-right">
+        <h2>Nifter</h2>
+        <p>The worlds largest digital marketplace for
+            crypto collectibities and non
+            tokens (NFTs) Buy, Sell and discover
+            exclusive digital assets</p>
+        <div id="footerLeftImages">
+            <a href="#"><img src="assets/footer/footerOne.png" alt="img"></a>
+            <a href="#"><img src="assets/footer/footerTwo.png" alt="img"></a>
+            <a href="#"><img src="assets/footer/footerThree.png" alt="img"></a>
+            <a href="#"><img src="assets/footer/footerFour.png" alt="img"></a>
+        </div>
+    </div>
+    <div id="footerRight">
+        <ul data-aos="fade-up">
+            <span>Explore</span>
+            <li><a href="#">Art</a></li>
+            <li><a href="#">Photography</a></li>
+            <li><a href="#">Music</a></li>
+            <li><a href="#">Games</a></li>
+        </ul>
+        <ul data-aos="fade-down">
+            <span>My Account</span>
+            <li><a href="#">My Profile</a></li>
+            <li><a href="#">My Collections</a></li>
+            <li><a href="#">My Favourites</a></li>
+            <li><a href="#">My Account Settings</a></li>
+        </ul>
+        <ul data-aos="fade-up">
+            <span>Resources</span>
+            <li><a href="#">Help Centre</a></li>
+            <li><a href="#">Partners</a></li>
+            <li><a href="#">Suggestions</a></li>
+            <li><a href="#">Newsletter</a></li>
+        </ul>
+        <ul data-aos="fade-down">
+            <span>Company</span>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Rankings</a></li>
+            <li><a href="#">Activity</a></li>
+        </ul>
+    </div>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>

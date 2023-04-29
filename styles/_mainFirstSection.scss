@@ -1,0 +1,473 @@
+/***********************mainSection*************************/
+
+body main {
+  z-index: -1;
+  margin-top: 50px;
+}
+
+/***********************mainFirstSectionLeft*************************/
+
+body main #mainFirstSection {
+  display: flex;
+  margin-left: 80px;
+}
+
+body main #mainFirstSection #mainFirstSectionLeft {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+body main #mainFirstSection #mainFirstSectionLeft #mainFirstSectionLeftOne {
+  width: 70%;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+body main #mainFirstSection #mainFirstSectionLeft #mainFirstSectionLeftOne h2 {
+  font-size: 40px;
+  color: white;
+  font-weight: 600;
+}
+
+body main #mainFirstSection #mainFirstSectionLeft #mainFirstSectionLeftOne span {
+  color: white;
+  opacity: 0.5;
+  font-size: 13px;
+}
+
+body main #mainFirstSection #mainFirstSectionLeft #mainFirstSectionLeftTwo {
+  width: 70%;
+  display: flex;
+  align-items: start;
+}
+
+body main #mainFirstSection #mainFirstSectionLeft #mainFirstSectionLeftTwo button:nth-child(1) {
+  padding: 6px 20px;
+  background-image: linear-gradient(#882898, #901FA3);
+  border-radius: 5px;
+  border: none;
+  color: white;
+}
+
+body main #mainFirstSection #mainFirstSectionLeft #mainFirstSectionLeftTwo button:nth-child(1):hover {
+  cursor: pointer;
+  color: gold;
+  transition: 0.5s ease-in-out;
+}
+
+body main #mainFirstSection #mainFirstSectionLeft #mainFirstSectionLeftTwo button:nth-child(2) {
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: #1F1721;
+  padding: 5px 20px;
+  color: gold;
+  margin-left: 10px;
+}
+
+body main #mainFirstSection #mainFirstSectionLeft #mainFirstSectionLeftTwo button:nth-child(2):hover {
+  cursor: pointer;
+  transition: ease-in-out .5s;
+  color: white;
+  border-color: gold;
+}
+
+body main #mainFirstSection #mainFirstSectionLeft #mainFirstSectionLeftThree {
+  width: 70%;
+  display: flex;
+  justify-content: start;
+  margin-top: 50px;
+  align-items: center;
+}
+
+body main #mainFirstSection #mainFirstSectionLeft #mainFirstSectionLeftThree img {
+  margin-right: 20px;
+}
+
+body main #mainFirstSection #mainFirstSectionLeft #mainFirstSectionLeftThree span {
+  color: white;
+}
+
+body main #mainFirstSection #mainFirstSectionLeft #mainFirstSectionLeftThree p {
+  margin: 0;
+  color: white;
+  opacity: 0.5;
+  font-size: 12px;
+}
+
+body main #mainFirstSection #mainFirstSectionLeft #mainFirstSectionLeftFour {
+  width: 70%;
+  display: flex;
+  justify-content: start;
+  margin-top: 20px;
+  align-items: center;
+}
+
+body main #mainFirstSection #mainFirstSectionLeft #mainFirstSectionLeftFour img {
+  margin-right: 20px;
+}
+
+body main #mainFirstSection #mainFirstSectionLeft #mainFirstSectionLeftFour span {
+  color: white;
+}
+
+body main #mainFirstSection #mainFirstSectionLeft #mainFirstSectionLeftFour p {
+  margin: 0;
+  color: white;
+  opacity: 0.5;
+  font-size: 12px;
+}
+
+body main #mainFirstSection #mainFirstSectionLeft #mainFirstSectionLeftFive {
+  width: 70%;
+  display: flex;
+  justify-content: start;
+  margin-top: 20px;
+  align-items: center;
+}
+
+body main #mainFirstSection #mainFirstSectionLeft #mainFirstSectionLeftFive img {
+  margin-right: 20px;
+}
+
+body main #mainFirstSection #mainFirstSectionLeft #mainFirstSectionLeftFive span {
+  color: white;
+}
+
+body main #mainFirstSection #mainFirstSectionLeft #mainFirstSectionLeftFive p {
+  margin: 0;
+  color: white;
+  opacity: 0.5;
+  font-size: 12px;
+}
+
+/***********************mainFirstSectionRight*************************/
+
+body main #mainFirstSection #mainFirstSectionRight {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+body main #mainFirstSection #mainFirstSectionRight img {
+  opacity: 0.5
+}
+
+body main #mainFirstSection #mainFirstSectionRight img:hover {
+  cursor: pointer;
+  opacity: 1;
+  transition: ease-in-out 0.5s;
+}
+
+
+body main #mainFirstSection #mainFirstSectionRight #mainFirstSectionRightOne {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  background-color: #414040;
+  padding: 10px;
+  margin-top: -90px;
+  margin-right: 40px;
+  z-index: 1;
+  opacity: 0.9;
+  border-radius: 40px;
+}
+
+body main #mainFirstSection #mainFirstSectionRight #mainFirstSectionRightOne .mainFirstSectionRightOneDiv {
+  margin: auto;
+}
+
+body main #mainFirstSection #mainFirstSectionRight #mainFirstSectionRightOne span {
+  font-size: 16px;
+  color: #FFF;
+  opacity: 0.5;
+}
+
+body main #mainFirstSection #mainFirstSectionRight #mainFirstSectionRightOne p {
+  font-size: 30px;
+  color: #901FA3;
+  margin: 0;
+}
+
+body main #mainFirstSection #mainFirstSectionRight #mainFirstSectionRightOne #mainFirstSectionRightOneOne {
+  display: flex;
+  flex-direction: column;
+}
+
+body main #mainFirstSection #mainFirstSectionRight #mainFirstSectionRightOne #mainFirstSectionRightOneOne div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 5px 0 5px;
+}
+
+body main #mainFirstSection #mainFirstSectionRight #mainFirstSectionRightOne #mainFirstSectionRightOneOne .currentBid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 5px 0 5px;
+}
+
+body main #mainFirstSection #mainFirstSectionRight #mainFirstSectionRightOne #mainFirstSectionRightOneOne .currentBid span {
+  display: flex;
+  flex-direction: column;
+}
+
+body main #mainFirstSection #mainFirstSectionRight #mainFirstSectionRightOne #mainFirstSectionRightOneOne .currentBid span:nth-child(1) {
+  font-size: 20px;
+  color: #901FA3;
+  opacity: 1;
+}
+
+body main #mainFirstSection #mainFirstSectionRight #mainFirstSectionRightOne #mainFirstSectionRightOneOne .currentBid span:nth-child(2) {
+  font-size: 20px;
+  color: #FFF;
+  opacity: 0.5;
+}
+
+body main #mainFirstSection #mainFirstSectionRight #mainFirstSectionRightOne #mainFirstSectionRightOneOne img {
+  width: 10px;
+  height: 10px;
+  margin-right: 15px;
+}
+
+body main #mainFirstSection #mainFirstSectionRight #mainFirstSectionRightOne #mainFirstSectionRightOneOne img:hover {
+  scale: 2.5;
+}
+
+body main #mainFirstSection #mainFirstSectionRight #mainFirstSectionRightOne #Timer {
+  display: flex;
+}
+
+body main #mainFirstSection #mainFirstSectionRight #mainFirstSectionRightOne #Timer p {
+  padding: 0 5px;
+}
+
+body main #mainFirstSection #mainFirstSectionRight #mainFirstSectionRightOne #Timer #end {
+  font-size: 30px;
+}
+
+body main #mainFirstSection #mainFirstSectionRight #mainFirstSectionRightOne #timerWords span {
+  padding: 0 5px;
+}
+
+body main #mainFirstSection #mainFirstSectionRight #mainFirstSectionRightOne #mainFirstSectionRightOneThree {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 10px;
+}
+
+body main #mainFirstSection #mainFirstSectionRight #mainFirstSectionRightOne #mainFirstSectionRightOneThree button:nth-child(1) {
+  width: 80px;
+  background-color: #1F1721;
+  color: #901FA3;
+  border: 1px solid #901FA3;
+  padding: 5px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+body main #mainFirstSection #mainFirstSectionRight #mainFirstSectionRightOne #mainFirstSectionRightOneThree button:nth-child(1):hover {
+
+  border: 1px solid #FFF;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+body main #mainFirstSection #mainFirstSectionRight #mainFirstSectionRightOne #mainFirstSectionRightOneThree button:nth-child(3) {
+  width: 80px;
+  background-color: #1F1721;
+  color: #FFF;
+  border: 1px solid #FFF;
+  padding: 5px;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
+body main #mainFirstSection #mainFirstSectionRight #mainFirstSectionRightOne #mainFirstSectionRightOneThree button:nth-child(3):hover {
+  color: #901FA3;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+
+/************************MODAL WINDOW**************************/
+
+/* Modal1 */
+
+
+body main #mainFirstSection #mainFirstSectionRight #mainFirstSectionRightOne #mainFirstSectionRightOneThree .modal1 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: 1.5s ease-in-out;
+}
+
+/* Modal Content */
+body main #mainFirstSection #mainFirstSectionRight #mainFirstSectionRightOne #mainFirstSectionRightOneThree .modal1 .modal-content {
+  background-color: #888;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%;
+  height: 400px;
+  position: relative;
+  top: 10%;
+}
+
+/* The Close Button */
+body main #mainFirstSection #mainFirstSectionRight #mainFirstSectionRightOne #mainFirstSectionRightOneThree .modal1 .modal-content .closeBtn1 {
+  color: black;
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  width: 20px;
+}
+
+body main #mainFirstSection #mainFirstSectionRight #mainFirstSectionRightOne #mainFirstSectionRightOneThree .modal1 .modal-content .closeBtn1:hover,
+body main #mainFirstSection #mainFirstSectionRight #mainFirstSectionRightOne #mainFirstSectionRightOneThree .modal1 .modal-content .closeBtn1:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid #1F1721;
+  border-radius: 15px;
+  transition: 0.2s ease-in-out;
+}
+
+/* The Div Section and Inputs */
+
+body main #mainFirstSection #mainFirstSectionRight #mainFirstSectionRightOne #mainFirstSectionRightOneThree .modal1 .modal-content form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  position: relative;
+  top: 30%;
+}
+
+body main #mainFirstSection #mainFirstSectionRight #mainFirstSectionRightOne #mainFirstSectionRightOneThree .modal1 .modal-content form .formDivBet {
+  width: 45%;
+  padding: 10px;
+  margin: 0 10px;
+
+}
+
+body main #mainFirstSection #mainFirstSectionRight #mainFirstSectionRightOne #mainFirstSectionRightOneThree .modal1 .modal-content form .formDivBet label {
+  font-size: 20px;
+  color: #901FA3;
+  margin: 0;
+}
+
+body main #mainFirstSection #mainFirstSectionRight #mainFirstSectionRightOne #mainFirstSectionRightOneThree .modal1 .modal-content form .formDivBet input {
+  min-width: 150px;
+  padding: 10px;
+  margin-top: 20px;
+  color: #901FA3;
+  text-align: center;
+  align-items: center;
+}
+
+body main #mainFirstSection #mainFirstSectionRight #mainFirstSectionRightOne #mainFirstSectionRightOneThree .modal1 .modal-content form .formDivBet input::placeholder {
+  color: #901FA3;
+}
+
+body main #mainFirstSection #mainFirstSectionRight #mainFirstSectionRightOne #mainFirstSectionRightOneThree .modal1 .modal-content form .formDivBet #inputUSD {
+  background-image: url("../assets/dollarLogo.png");
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+body main #mainFirstSection #mainFirstSectionRight #mainFirstSectionRightOne #mainFirstSectionRightOneThree .modal1 .modal-content form .formDivBet #inputETH {
+  background-image: url("../assets/etheriumLogo2.png");
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+body main #mainFirstSection #mainFirstSectionRight #mainFirstSectionRightOne #mainFirstSectionRightOneThree .modal1 .modal-content form input[type ="submit"] {
+  max-width: 300px;
+  min-width: 150px;
+  padding: 10px;
+  background-image: linear-gradient(#882898, #901FA3);
+  border-radius: 5px;
+  border: none;
+  color: white;
+}
+
+body main #mainFirstSection #mainFirstSectionRight #mainFirstSectionRightOne #mainFirstSectionRightOneThree .modal1 .modal-content form input[type ="submit"]:hover {
+  cursor: pointer;
+  color: gold;
+  border: 1px solid gold;
+  transition: 0.5s ease-in-out;
+}
+
+
+/* Modal2 */
+
+body main #mainFirstSection #mainFirstSectionRight #mainFirstSectionRightOne #mainFirstSectionRightOneThree .modal2 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content */
+body main #mainFirstSection #mainFirstSectionRight #mainFirstSectionRightOne #mainFirstSectionRightOneThree .modal2 .modal-content {
+  background-color: #888;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  opacity: 1;
+}
+
+body main #mainFirstSection #mainFirstSectionRight #mainFirstSectionRightOne #mainFirstSectionRightOneThree .modal2 .modal-content img {
+  opacity: 1;
+}
+
+body main #mainFirstSection #mainFirstSectionRight #mainFirstSectionRightOne #mainFirstSectionRightOneThree .modal2 .modal-content img:hover {
+  scale: 1.2;
+  transition: 1.5s ease-in-out;
+}
+
+/* The Close Button */
+body main #mainFirstSection #mainFirstSectionRight #mainFirstSectionRightOne #mainFirstSectionRightOneThree .modal2 .modal-content .closeBtn2 {
+  color: black;
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  width: 20px;
+}
+
+body main #mainFirstSection #mainFirstSectionRight #mainFirstSectionRightOne #mainFirstSectionRightOneThree .modal2 .modal-content .closeBtn2:hover,
+body main #mainFirstSection #mainFirstSectionRight #mainFirstSectionRightOne #mainFirstSectionRightOneThree .modal2 .modal-content .closeBtn2:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid #1F1721;
+  border-radius: 15px;
+  transition: 0.2s ease-in-out;
+}
