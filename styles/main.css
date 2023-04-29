@@ -966,7 +966,7 @@ body main #mainFourthSection {
   justify-content: center;
   align-items: center;
   margin: auto;
-  width: 100%;
+  max-width: 1240px;
 }
 body main #mainFourthSection h2 {
   font-size: 40px;
@@ -1529,6 +1529,14 @@ body main #mainSixthSection #mainSixthSectionRight {
   body footer #footerRight ul {
     width: 50%;
     text-align: center;
+  }
+}
+@media screen and (max-width: 400px) {
+  body main #mainFirstSection #mainFirstSectionRight img {
+    max-width: 370px;
+  }
+  body main #mainThirdSection .mainThirdSectionSliderCard .mainThirdSectionSliderCardBottom button:nth-child(1) {
+    margin-left: 10px;
   }
 }
 
